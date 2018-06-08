@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.12" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <package id="1" language="java" name="edu.ecu.csci6230.group1.quiztracker.users" project="QuizTracker" 
+    file="/QuizTracker/src/edu/ecu/csci6230/group1/quiztracker/users" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="465" width="514" x="19" y="13"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="2" language="java" name="edu.ecu.csci6230.group1.quiztracker.users.User" project="QuizTracker" 
+    file="/QuizTracker/src/edu/ecu/csci6230/group1/quiztracker/users/User.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="406" y="148"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <enumeration id="3" language="java" name="edu.ecu.csci6230.group1.quiztracker.users.UserType" project="QuizTracker" 
+    file="/QuizTracker/src/edu/ecu/csci6230/group1/quiztracker/users/UserType.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="403" y="392"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </enumeration>  
+  <class id="4" language="java" name="edu.ecu.csci6230.group1.quiztracker.users.Administrator" project="QuizTracker" 
+    file="/QuizTracker/src/edu/ecu/csci6230/group1/quiztracker/users/Administrator.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="170" y="127"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="edu.ecu.csci6230.group1.quiztracker.users.Assistant" project="QuizTracker" 
+    file="/QuizTracker/src/edu/ecu/csci6230/group1/quiztracker/users/Assistant.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="166" y="436"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="edu.ecu.csci6230.group1.quiztracker.users.DeptHead" project="QuizTracker" 
+    file="/QuizTracker/src/edu/ecu/csci6230/group1/quiztracker/users/DeptHead.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="168" y="291"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="edu.ecu.csci6230.group1.quiztracker.users.Instructor" project="QuizTracker" 
+    file="/QuizTracker/src/edu/ecu/csci6230/group1/quiztracker/users/Instructor.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="167" y="364"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="edu.ecu.csci6230.group1.quiztracker.users.Student" project="QuizTracker" 
+    file="/QuizTracker/src/edu/ecu/csci6230/group1/quiztracker/users/Student.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="168" y="211"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <package id="9" language="java" name="edu.ecu.csci6230.group1.quiztracker.managers" project="QuizTracker" 
+    file="/QuizTracker/src/edu/ecu/csci6230/group1/quiztracker/managers" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="199" width="539" x="18" y="682"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="10" language="java" name="edu.ecu.csci6230.group1.quiztracker.managers.QuizManager" project="QuizTracker" 
+    file="/QuizTracker/src/edu/ecu/csci6230/group1/quiztracker/managers/QuizManager.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="157" y="766"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="edu.ecu.csci6230.group1.quiztracker.managers.AttendanceManager" 
+    project="QuizTracker" file="/QuizTracker/src/edu/ecu/csci6230/group1/quiztracker/managers/AttendanceManager.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="159" y="838"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="edu.ecu.csci6230.group1.quiztracker.managers.CourseManager" project="QuizTracker" 
+    file="/QuizTracker/src/edu/ecu/csci6230/group1/quiztracker/managers/CourseManager.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="409" y="766"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="edu.ecu.csci6230.group1.quiztracker.managers.UserManager" project="QuizTracker" 
+    file="/QuizTracker/src/edu/ecu/csci6230/group1/quiztracker/managers/UserManager.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="408" y="837"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <package id="14" language="java" name="edu.ecu.csci6230.group1.quiztracker.fileIO" project="QuizTracker" 
+    file="/QuizTracker/src/edu/ecu/csci6230/group1/quiztracker/fileIO" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="196" width="326" x="19" y="482"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="15" language="java" name="edu.ecu.csci6230.group1.quiztracker.fileIO.DownloadFile" project="QuizTracker" 
+    file="/QuizTracker/src/edu/ecu/csci6230/group1/quiztracker/fileIO/DownloadFile.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="191" y="564"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="edu.ecu.csci6230.group1.quiztracker.fileIO.UploadFile" project="QuizTracker" 
+    file="/QuizTracker/src/edu/ecu/csci6230/group1/quiztracker/fileIO/UploadFile.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="192" y="638"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <package id="17" language="java" name="edu.ecu.csci6230.group1.quiztracker.dataconnection" project="QuizTracker" 
+    file="/QuizTracker/src/edu/ecu/csci6230/group1/quiztracker/dataconnection" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="230" width="398" x="564" y="13"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="18" language="java" name="edu.ecu.csci6230.group1.quiztracker.dataconnection.DatabaseConnection" 
+    project="QuizTracker" 
+    file="/QuizTracker/src/edu/ecu/csci6230/group1/quiztracker/dataconnection/DatabaseConnection.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="775" y="147"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <package id="19" language="java" name="edu.ecu.csci6230.group1.quiztracker.controller" project="QuizTracker" 
+    file="/QuizTracker/src/edu/ecu/csci6230/group1/quiztracker/controller" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="849" width="469" x="974" y="12"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="20" language="java" name="edu.ecu.csci6230.group1.quiztracker.controller.Controller" project="QuizTracker" 
+    file="/QuizTracker/src/edu/ecu/csci6230/group1/quiztracker/controller/Controller.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1211" y="458"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="false" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <package id="21" language="java" name="edu.ecu.csci6230.group1.quiztracker.ui" project="QuizTracker" 
+    file="/QuizTracker/src/edu/ecu/csci6230/group1/quiztracker/ui" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="566" width="298" x="570" y="315"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="22" language="java" name="edu.ecu.csci6230.group1.quiztracker.ui.QuizTrackerGUI" project="QuizTracker" 
+    file="/QuizTracker/src/edu/ecu/csci6230/group1/quiztracker/ui/QuizTrackerGUI.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="713" y="622"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <association id="23">    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="24" name="quizSystem">        
+        <position height="19" width="71" x="896" y="521"/>      
+      </attribute>      
+      <multiplicity id="25" minimum="0" maximum="1">        
+        <position height="17" width="25" x="936" y="550"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="26">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <generalization id="27">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <generalization id="28">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <association id="29">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="30" name="database"/>      
+      <multiplicity id="31" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="32">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <association id="33">    
+    <end type="SOURCE" refId="20" navigable="false">      
+      <attribute id="34" name="currentUser"/>      
+      <multiplicity id="35" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="36">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="37" name="userRole">        
+        <position height="0" width="0" x="-282" y="244"/>      
+      </attribute>      
+      <multiplicity id="38" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-282" y="244"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="39">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <association id="40">    
+    <bendpoint x="870" y="249"/>    
+    <bendpoint x="917" y="250"/>    
+    <bendpoint x="914" y="211"/>    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="41" name="SQLConnection">        
+        <position height="19" width="95" x="839" y="251"/>      
+      </attribute>      
+      <multiplicity id="42" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="false" package="false" protected="false" private="false" static="false"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

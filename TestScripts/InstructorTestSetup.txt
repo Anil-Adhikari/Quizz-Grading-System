@@ -1,0 +1,93 @@
+TRUNCATE TABLE USER;
+TRUNCATE TABLE ENROLLMENT;
+TRUNCATE TABLE ROLE;
+TRUNCATE TABLE QUIZ;
+TRUNCATE TABLE COURSE;
+TRUNCATE TABLE ATTENDANCE;
+TRUNCATE TABLE CLASS_DATE;
+ALTER TABLE QUIZ ALTER COLUMN id RESTART WITH 1;
+
+/* username, first, last, password, role, reset_password_flag, active_user_flag */
+INSERT INTO "USER" VALUES ('dwhite','David','White','dwhite123','ADMIN',0,1);
+INSERT INTO "USER" VALUES ('jdoe','John','Doe','jdoe123','STUDENT',0,1);
+INSERT INTO "USER" VALUES ('tsmith','Tom','Smith','tsmith123','STUDENT',0,1);
+INSERT INTO "USER" VALUES ('djohnson','Don','Johnson','djohnson123','STUDENT',0,1);
+INSERT INTO "USER" VALUES ('svilkomir','Sergiey','Vilkomir','svilkomir','INSTRUCTOR',0,1);
+INSERT INTO "USER" VALUES ('dhead','Dept','Head','dhead1234','DEPT_HEAD',0,1);
+INSERT INTO "USER" VALUES ('wbee','Worker','Bee','wbee123','TA',0,1);
+INSERT INTO "USER" VALUES ('gdemare','Guido','DeMare','gdemare123','STUDENT',0,0);
+
+/* internal_id_auto_generated, deptartment, course_id, sect_id, term, year, course_description */
+INSERT INTO "COURSE" VALUES (NULL,'CSCI',6840,100,'spring',2015,'Data Mining');
+INSERT INTO "COURSE" VALUES (NULL,'CSCI',6840,100,'spring',2017,'Data Mining');
+INSERT INTO "COURSE" VALUES (NULL,'SENG',6230,601,'fall',2016,'Software Engineering Fundamentals');
+INSERT INTO "COURSE" VALUES (NULL,'SENG',6240,101,'fall',2016,'Software System Architecture');
+INSERT INTO "COURSE" VALUES (NULL,'CSCI',6250,100,'fall',2016,'Data Structure');
+INSERT INTO "COURSE" VALUES (NULL,'GOLF',9999,100,'fall',2016,'Yard management');
+
+/* internal_id_auto_generated, userid, department, course_id, sect_id, term, year, course_description */
+/* department_head only gets department */
+INSERT INTO "ENROLLMENT" VALUES (NULL,'dhead','CSCI',NULL,NULL,NULL,NULL);
+INSERT INTO "ENROLLMENT" VALUES (NULL,'dhead','SENG',NULL,NULL,NULL,NULL);
+INSERT INTO "ENROLLMENT" VALUES (NULL,'jdoe','CSCI',6840,100,'spring',2017);
+INSERT INTO "ENROLLMENT" VALUES (NULL,'jdoe','SENG',6240,101,'fall',2016);
+INSERT INTO "ENROLLMENT" VALUES (NULL,'jdoe','SENG',6230,601,'fall',2016);
+INSERT INTO "ENROLLMENT" VALUES (NULL,'svilkomir','SENG',6240,101,'fall',2016);
+INSERT INTO "ENROLLMENT" VALUES (NULL,'tsmith','SENG',6240,101,'fall',2016);
+INSERT INTO "ENROLLMENT" VALUES (NULL,'djohnson','SENG',6240,101,'fall',2016);
+INSERT INTO "ENROLLMENT" VALUES (NULL,'tsmith','SENG',6230,601,'fall',2016);
+
+/* internal_id_auto_generated, userid, department, course_id, sect_id, term, year, course_date, present, active_user_flag */
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','SENG','6230',601,'fall',2016,'2016-10-14',0,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','SENG','6230',601,'fall',2016,'2016-10-25',1,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','SENG','6230',601,'fall',2016,'2016-10-27',0,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','SENG','6230',601,'fall',2016,'2016-11-01',1,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','SENG','6230',601,'fall',2016,'2016-11-03',1,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','SENG','6230',601,'fall',2016,'2016-11-08',0,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','SENG','6230',601,'fall',2016,'2016-11-10',1,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','SENG','6230',601,'fall',2016,'2016-10-31',1,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','SENG','6230',601,'fall',2016,'2016-10-10',1,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','SENG','6240',101,'fall',2016,'2016-10-14',0,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','SENG','6240',101,'fall',2016,'2016-10-25',1,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','SENG','6240',101,'fall',2016,'2016-10-27',0,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','SENG','6240',101,'fall',2016,'2016-11-01',1,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','SENG','6240',101,'fall',2016,'2016-11-03',1,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','CSCI','6840',100,'spring',2017,'2017-01-05',1,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','CSCI','6840',100,'spring',2017,'2017-01-31',0,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','CSCI','6840',100,'spring',2017,'2017-01-10',1,1);
+
+INSERT INTO "ATTENDANCE" VALUES (NULL,'djohnson','SENG','6240',101,'fall',2016,'2016-10-14',0,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'djohnson','SENG','6240',101,'fall',2016,'2016-10-25',0,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'djohnson','SENG','6240',101,'fall',2016,'2016-10-27',0,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'djohnson','SENG','6240',101,'fall',2016,'2016-11-01',0,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'djohnson','SENG','6240',101,'fall',2016,'2016-11-03',0,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'gdemare','SENG','6240',101,'fall',2016,'2016-11-03',0,0);
+
+
+/* internal_id_auto_generated, department, course_id, sect_id, term, year, date */
+INSERT INTO CLASS_DATE(id, dept, course, section, term, year, date) VALUES (NULL,'SENG','6230',601,'fall',2016,'2016-10-14');
+INSERT INTO CLASS_DATE(id, dept, course, section, term, year, date) VALUES (NULL,'SENG','6230',601,'fall',2016,'2016-10-25');
+INSERT INTO CLASS_DATE(id, dept, course, section, term, year, date) VALUES (NULL,'SENG','6230',601,'fall',2016,'2016-10-27');
+INSERT INTO CLASS_DATE(id, dept, course, section, term, year, date) VALUES (NULL,'SENG','6230',601,'fall',2016,'2016-11-01');
+INSERT INTO CLASS_DATE(id, dept, course, section, term, year, date) VALUES (NULL,'SENG','6230',601,'fall',2016,'2016-11-03');
+INSERT INTO CLASS_DATE(id, dept, course, section, term, year, date) VALUES (NULL,'SENG','6230',601,'fall',2016,'2016-11-08');
+INSERT INTO CLASS_DATE(id, dept, course, section, term, year, date) VALUES (NULL,'SENG','6230',601,'fall',2016,'2016-11-10');
+INSERT INTO CLASS_DATE(id, dept, course, section, term, year, date) VALUES (NULL,'SENG','6230',601,'fall',2016,'2016-10-31');
+INSERT INTO CLASS_DATE(id, dept, course, section, term, year, date) VALUES (NULL,'SENG','6230',601,'fall',2016,'2016-10-10');
+INSERT INTO CLASS_DATE(id, dept, course, section, term, year, date) VALUES (NULL,'SENG','6240',101,'fall',2016,'2016-10-14');
+INSERT INTO CLASS_DATE(id, dept, course, section, term, year, date) VALUES (NULL,'SENG','6240',101,'fall',2016,'2016-10-25');
+INSERT INTO CLASS_DATE(id, dept, course, section, term, year, date) VALUES (NULL,'SENG','6240',101,'fall',2016,'2016-10-27');
+INSERT INTO CLASS_DATE(id, dept, course, section, term, year, date) VALUES (NULL,'SENG','6240',101,'fall',2016,'2016-11-01');
+INSERT INTO CLASS_DATE(id, dept, course, section, term, year, date) VALUES (NULL,'SENG','6240',101,'fall',2016,'2016-11-03');
+INSERT INTO CLASS_DATE(id, dept, course, section, term, year, date) VALUES (NULL,'CSCI','6840',100,'spring',2017,'2017-01-05');
+INSERT INTO CLASS_DATE(id, dept, course, section, term, year, date) VALUES (NULL,'CSCI','6840',100,'spring',2017,'2017-01-31');
+INSERT INTO CLASS_DATE(id, dept, course, section, term, year, date) VALUES (NULL,'CSCI','6840',100,'spring',2017,'2017-01-10');
+
+INSERT INTO QUIZ(id, dept, course, section, term, year, status, name, user, score, value, comments, due_date, submit_date, quiz_file, file_name, active) VALUES (NULL, 'SENG', '6230', 601, 'fall', 2016, 'GRADED', 'Quiz 2', 'jdoe', 12, 15, '#1 wrong', '2016-11-23', null, '54686973206973204353434920363235302073656374696f6e203130302066616c6c207465726d2032303136205175697a20320d0d', 'SENG_6230_Quiz2.txt', 1);
+INSERT INTO QUIZ(id, dept, course, section, term, year, status, name, user, score, value, comments, due_date, submit_date, quiz_file, file_name, active) VALUES (NULL, 'SENG', '6230', 601, 'fall', 2016, 'GRADED', 'Quiz 1', 'jdoe', 5, 15, 'study more', '2016-11-15', null, '54686973206973204353434920363235302073656374696f6e203130302066616c6c207465726d2032303136205175697a20310d0d', 'SENG_6230_Quiz1.txt', 1);
+INSERT INTO QUIZ(id, dept, course, section, term, year, status, name, user, score, value, comments, due_date, submit_date, quiz_file, file_name, active) VALUES (NULL, 'SENG', '6230', 601, 'fall', 2016, 'SUBMITTED', 'Quiz 3', 'jdoe', null, 10, null, '2016-12-25', null, '54686973206973204353434920363235302073656374696f6e203130302066616c6c207465726d2032303136205175697a20310d0d', 'SENG_6230_Quiz3.txt', 1);
+INSERT INTO QUIZ(id, dept, course, section, term, year, status, name, user, score, value, comments, due_date, submit_date, quiz_file, file_name, active) VALUES (NULL, 'SENG', '6230', 601, 'fall', 2016, 'NEW', 'Quiz 4', 'jdoe', null, 10, null, '2016-11-28', null, '54686973206973204353434920363235302073656374696f6e203130302066616c6c207465726d2032303136205175697a20310d0d', 'SENG_6230_Quiz4.txt', 1);
+INSERT INTO QUIZ(id, dept, course, section, term, year, status, name, user, score, value, comments, due_date, submit_date, quiz_file, file_name, active) VALUES (NULL, 'SENG', '6230', 601, 'fall', 2016, 'GRADED', 'Quiz 2', 'tsmith', 6, 15, '#1 wrong', '2016-11-23', null, '54686973206973204353434920363235302073656374696f6e203130302066616c6c207465726d2032303136205175697a20320d0d', 'SENG_6230_Quiz2.txt', 1);
+INSERT INTO QUIZ(id, dept, course, section, term, year, status, name, user, score, value, comments, due_date, submit_date, quiz_file, file_name, active) VALUES (NULL, 'SENG', '6230', 601, 'fall', 2016, 'GRADED', 'Quiz 1', 'tsmith', 15, 15, 'study more', '2016-11-15', null, '54686973206973204353434920363235302073656374696f6e203130302066616c6c207465726d2032303136205175697a20310d0d', 'SENG_6230_Quiz1.txt', 1);
+INSERT INTO QUIZ(id, dept, course, section, term, year, status, name, user, score, value, comments, due_date, submit_date, quiz_file, file_name, active) VALUES (NULL, 'SENG', '6230', 601, 'fall', 2016, 'GRADED', 'Quiz 3', 'tsmith', 5, 10, null, '2016-12-25', null, '54686973206973204353434920363235302073656374696f6e203130302066616c6c207465726d2032303136205175697a20310d0d', 'SENG_6230_Quiz3.txt', 1);
+INSERT INTO QUIZ(id, dept, course, section, term, year, status, name, user, score, value, comments, due_date, submit_date, quiz_file, file_name, active) VALUES (NULL, 'SENG', '6230', 601, 'fall', 2016, 'NEW', 'Quiz 4', 'tsmith', null, 10, null, '2016-11-28', null, '54686973206973204353434920363235302073656374696f6e203130302066616c6c207465726d2032303136205175697a20310d0d', 'SENG_6230_Quiz4.txt', 1);

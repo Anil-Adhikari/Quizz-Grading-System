@@ -1,0 +1,46 @@
+TRUNCATE TABLE USER;
+TRUNCATE TABLE ENROLLMENT;
+TRUNCATE TABLE ROLE;
+TRUNCATE TABLE QUIZ;
+TRUNCATE TABLE COURSE;
+TRUNCATE TABLE ATTENDANCE;
+TRUNCATE TABLE CLASS_DATE;
+
+/* username, first, last, password, role, reset_password_flag, active_user_flag */
+INSERT INTO "USER" VALUES ('dwhite','David','White','dwhite123','ADMIN',0,1);
+INSERT INTO "USER" VALUES ('jdoe','John','Doe','jdoe123','STUDENT',0,1);
+INSERT INTO "USER" VALUES ('svilkomir','Sergiey','Vilkomir','svilkomir','INSTRUCTOR',0,1);
+INSERT INTO "USER" VALUES ('dhead','Dept','Head','dhead1234','DEPT_HEAD',0,1);
+
+/* internal_id_auto_generated, deptartment, course_id, sect_id, term, year, course_description */
+INSERT INTO "COURSE" VALUES (NULL,'CSCI',6840,100,'spring',2017,'Data Mining');
+INSERT INTO "COURSE" VALUES (NULL,'SENG',6230,601,'fall',2016,'Software Engineering Fundamentals');
+INSERT INTO "COURSE" VALUES (NULL,'SENG',6240,101,'fall',2016,'Software System Architecture');
+INSERT INTO "COURSE" VALUES (NULL,'CSCI',6250,100,'fall',2016,'Data Structure');
+
+/* internal_id_auto_generated, userid, department, course_id, sect_id, term, year, course_description */
+/* department_head only gets department */
+INSERT INTO "ENROLLMENT" VALUES (NULL,'dhead','CSCI',NULL,NULL,NULL,NULL);
+INSERT INTO "ENROLLMENT" VALUES (NULL,'dhead','SENG',NULL,NULL,NULL,NULL);
+INSERT INTO "ENROLLMENT" VALUES (NULL,'jdoe','CSCI',6840,100,'spring',2017);
+INSERT INTO "ENROLLMENT" VALUES (NULL,'jdoe','SENG',6240,101,'fall',2016);
+INSERT INTO "ENROLLMENT" VALUES (NULL,'jdoe','SENG',6230,601,'fall',2016);
+
+/* internal_id_auto_generated, userid, department, course_id, sect_id, term, year, course_date, present, active_user_flag */
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','SENG','6230',601,'fall',2016,'2016-10-14',0,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','SENG','6230',601,'fall',2016,'2016-10-25',1,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','SENG','6230',601,'fall',2016,'2016-10-27',0,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','SENG','6230',601,'fall',2016,'2016-11-01',1,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','SENG','6230',601,'fall',2016,'2016-11-03',1,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','SENG','6230',601,'fall',2016,'2016-11-08',0,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','SENG','6230',601,'fall',2016,'2016-11-10',1,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','SENG','6230',601,'fall',2016,'2016-10-31',1,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','SENG','6230',601,'fall',2016,'2016-10-10',1,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','SENG','6240',101,'fall',2016,'2016-10-14',0,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','SENG','6240',101,'fall',2016,'2016-10-25',1,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','SENG','6240',101,'fall',2016,'2016-10-27',0,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','SENG','6240',101,'fall',2016,'2016-11-01',1,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','SENG','6240',101,'fall',2016,'2016-11-03',1,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','CSCI','6840',100,'spring',2017,'2017-01-05',1,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','CSCI','6840',100,'spring',2017,'2017-01-31',1,1);
+INSERT INTO "ATTENDANCE" VALUES (NULL,'jdoe','CSCI','6840',100,'spring',2017,'2017-01-10',1,1);
